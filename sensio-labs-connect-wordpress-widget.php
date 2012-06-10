@@ -43,7 +43,8 @@ class Sensio_Labs_Connect_Wordpress_Widget extends WP_Widget {
 
         $wprr_args = array(
         	'timeout' => 30,
-        	'headers' => array('Connection' => 'Close','Accept' => '*/*') 
+        	'headers' => array('Connection' => 'Close','Accept' => '*/*'),
+        	'sslverify' => false
     	);
         $url = 'https://connect.sensiolabs.com/profile/'.$new_instance['username'].'.json';
 
